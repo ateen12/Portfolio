@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know me</title>
+    <link rel="stylesheet" href="knowStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 0, 184, 1);transform: msFilter";><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactIndex.html">Get in Touch</a></li>
+            <li><a href="#" download="CV.apk">Get my CV App</a></li>
+        </ul>
+
+        <ul>
+            <li class="logo"><a href="index.html">Arush here</a></li>
+            <li class="hideOnSmallScreen"><a href="index.html">Home</a></li>
+            <li class="hideOnSmallScreen"><a href="contactIndex.html">Get in Touch</a></li>
+            <li class="hideOnSmallScreen"><a href="#" download="CV.apk">Get my CV App</a></li>
+            <li onclick=showSidebar() class="menu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(255, 0, 184, 1);transform: msFilter";><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></a></li>
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+
+
+    <div class="mainMiddleContainer">
+        <div class="heading"><text>Some things about me... <hr></text></div>
+        <div class="section1">
+            <div class="box1">
+                <text class="topic">Introduction<hr></text>
+                <p class="data">I am <span class="pinkText">Arush</span> from India. A <span class="pinkText">12 year boy</span> who belongs from UP, Sitapur. Going to be mastering the field of <span class="pinkText">programming.</span></p>
+            </div>
+            <div class="box2">
+                <text class="topic">Qualifications<hr></text>
+                <p class="data">So, Currently I am in <span class="pinkText">Class 7th</span>. I have just passed my <span class="pinkText">6th Class</span> with <span class="pinkText">91%</span>. The best results in <span class="pinkText">Maths.</span></p>
+            </div>
+        </div>
+        <div class="section2">
+
+            <div class="box3">
+                <text class="topic">My Skills<hr></text>
+                <p class="data">A <span class="pinkText">Skilled Kid</span> in HTML, CSS, JavaScript, Java, Python. Currently, learning <span class="pinkText">Django</span> and creating <span class="pinkText">Exciting Projects</span>.</p>
+            </div>
+            <div class="box4">
+                <text class="topic">My Hobbies<hr></text>
+                <p class="data">My <span class="pinkText">Crazes</span> are in Games like: <span class="pinkText">Football</span> and <span class="pinkText">Badminton</span>. I can easily solve the <span class="pinkText">3x3, Mirror</span> and a <span class="pinkText">Pyraminx</span>.</p>            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

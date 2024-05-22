@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+    min-height: 220vh;
+    background: url("image2.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.aquaText {
+    color: aqua;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    height: 60px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    left: 0;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 60px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+nav a {
+    height: 100%;
+    color: rgb(255, 0, 184);
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 0 30px;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(255, 0, 184);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.sidebar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px);       
+    border-top-left-radius: 15px;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+  
+
+
+
+.menu {
+    display: none;
+    
+}
+
+@media (max-width: 965px) {
+    .menu {
+        display: flex;
+    }
+
+    .hideOnSmallScreen {
+        display: none;
+    }
+
+    .logo {
+        letter-spacing: 3px;
+        font-size: 17px;
+    }
+}
+
+
+
+
+.mainMiddleContainer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 180px;
+    margin-top: 50px;
+}
+
+.textLeft {
+    color: white;
+    height: 140px;
+    width: 410px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.name{
+    font-size: 59px;
+}
+
+.animatedText{
+    font-size: 28px;
+    color: aqua;
+}
+
+@media (max-width:1235px) {
+
+    .name{
+        font-size: 33px; 
+        width: 320px;
+        position: relative;
+        top: 140px;
+        margin-left: 90px;
+    }
+    .animatedText{
+        font-size: 17px;
+        margin-left: 90px;
+    }
+
+    .imageRight{
+        content: url("knowMeImage.png");
+        height: 390px;
+        width: 390px;
+        margin-right: 140px;
+    }
+
+    .mainMiddleContainer {
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 100px;
+    }
+
+}
+
+@media (max-width: 961px){
+    .imageRight{
+        display: none;
+    }
+
+    .mainMiddleContainer{
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .textLeft{
+        position: relative;
+        bottom: 100px;
+    }
+}
+
+
+
+
+
+
+
+.ProjectsHeadingContainer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.ProjectsHeadingContainer text {
+    font-size: 55px;
+    color: white;
+    font-weight: 900;
+}
+
+
+
+.mainProjectsContainer {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 90px;
+}
+
+
+
+.section1 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project1 {
+    width: 370px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: -2px -2px 30px rgb(255, 0, 184);
+}
+
+.nameContainer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aqua;
+    font-size: 25px;
+}
+
+.project1Image {
+    width: 100%;
+    height: 85%;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 1px solid rgba(255, 0, 183, 0.606);
+}
+
+
+
+
+.project2 {
+    width: 370px;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(300px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: -2px -2px 30px rgb(255, 0, 184);
+}
+
+.project2Image {
+    width: 100%;
+    height: 85%;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 1px solid rgba(255, 0, 183, 0.606);
+}
+
+hr{
+    border: none;
+    width: 40%;
+    height: 10px;
+    background-color: rgb(255, 0, 184);
+    border-radius: 10px;
+    margin-bottom: 90px;
+}
+
+@media (max-width: 1015px) {
+
+    body{
+        min-height: 100vh;
+    }
+
+    .mainProjectsContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 360px;
+    }
+
+    .section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project1{
+        height: 250px;
+        width: 300px;
+    }
+
+    .nameContainer{
+        font-size: x-large;
+    }
+
+    .project2{
+        height: 250px;
+        width: 300px;
+        margin-top: 90px;
+    }
+        
+    .ProjectsHeadingContainer text {
+        font-size: 35px;
+        color: white;
+        font-weight: 900;
+        position: relative;
+        bottom: 200px;
+    }
+
+    
+}
